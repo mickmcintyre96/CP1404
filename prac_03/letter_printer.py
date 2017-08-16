@@ -1,11 +1,11 @@
 def main():
     name = get_name()
-    letter_picker = frequency_of_letters(name)
-    print(letter_picker)
-
-
-def frequency_of_letters(name):
     letter_frequency = int(input("What frequency of letters? "))
+    frequency_of_letters(name,letter_frequency)
+    print(frequency_of_letters(name,letter_frequency))
+
+
+def frequency_of_letters(name,letter_frequency):
     name_no_space = name.replace(" ", "")
     letter_picker = name_no_space[0:len(name_no_space):letter_frequency]
     return letter_picker

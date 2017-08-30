@@ -18,4 +18,5 @@ while choice != "Q":
         print("Invalid option")
     print(MENU)
     choice = input(">>> ").upper()
+
 print("Thank you.")

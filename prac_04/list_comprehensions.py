@@ -23,22 +23,26 @@ full_initials = [(name.split()[0][0], name.split()[1][0]) for name in
                  full_names]
 print(full_initials)
 
-almost_numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+almost_numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
 
 # TODO: use a list comprehension to create a list of integers
 # from this list of strings
 
-various_chars = ['0', '1', 'h', '2', 'a']
-numbers = []
-for number in various_chars:
-    if number.isnumeric():
-        numbers.append(number)
-# numbers =
+# numbers = []
+# for char in almost_numbers:
+#         number = int(char)
+#         numbers.append(number)
+# print(numbers)
+
+numbers=[int(char) for char in almost_numbers]
 print(numbers)
+
 # TODO: use a list comprehension to create a list of all of the full_names
-full_names_lower = []
-# in lowercase format
-for full_name in full_names:
-    full_names_lower.append(full_name.lower())
-print(full_names_lower)
+# full_names_lower = []
+# # in lowercase format
+# for full_name in full_names:
+#     full_names_lower.append(full_name.lower())
+# print(full_names_lower)
 # lowercase_full_names =
+full_names_lower = [full_name.lower() for full_name in full_names]
+print (full_names_lower)

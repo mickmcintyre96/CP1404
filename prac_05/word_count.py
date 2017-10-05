@@ -12,4 +12,4 @@ word_list = list(different_words.keys())
 word_list.sort()
 max_word_length = max((len(word) for word in words))
 for word in word_list:
-    print("{:{}} : {}".format(word, max_word_length, different_words[word]))
+    print("{:{}} : }".format(word, max_word_length, different_words[word]))
